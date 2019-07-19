@@ -27,14 +27,17 @@ public class CameraShake : MonoBehaviour
     {
         if (shakeAmount > 0)
         {
-            Vector3 camPos = mainCam.transform.position;
-            float offSetX = Random.value * shakeAmount * 2 - shakeAmount;
-            float offSetY = Random.value * shakeAmount * 2 - shakeAmount;
+            if (mainCam != null)
+            {
+                Vector3 camPos = mainCam.transform.position;
+                float offSetX = Random.value * shakeAmount * 2 - shakeAmount;
+                float offSetY = Random.value * shakeAmount * 2 - shakeAmount;
 
-            camPos.x += offSetX;
-            camPos.y += offSetY;
+                camPos.x += offSetX;
+                camPos.y += offSetY;
 
-            mainCam.transform.position = camPos;
+                mainCam.transform.position = camPos;
+            }
         }
     }
 

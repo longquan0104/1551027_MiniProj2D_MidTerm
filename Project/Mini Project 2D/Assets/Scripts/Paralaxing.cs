@@ -31,14 +31,17 @@ public class Paralaxing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i=0;i < background.Length; i++)
+        if (cam != null)
         {
-            float paralax = (previousCamPos.x - cam.position.x) * paralaxScales[i];
-            float backgroundTargetPosX = background[i].position.x + paralax;
-            Vector3 backgroundTargetPos = new Vector3(backgroundTargetPosX, background[i].position.y, background[i].position.z);
+            for (int i = 0; i < background.Length; i++)
+            {
+                float paralax = (previousCamPos.x - cam.position.x) * paralaxScales[i];
+                float backgroundTargetPosX = background[i].position.x + paralax;
+                Vector3 backgroundTargetPos = new Vector3(backgroundTargetPosX, background[i].position.y, background[i].position.z);
 
-            background[i].position = Vector3.Lerp(background[i].position, backgroundTargetPos, smoothing * Time.deltaTime);
+                background[i].position = Vector3.Lerp(background[i].position, backgroundTargetPos, smoothing * Time.deltaTime);
+            }
+            previousCamPos = cam.position;
         }
-        previousCamPos = cam.position;
     }
 }

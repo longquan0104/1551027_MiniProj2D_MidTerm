@@ -2566,4 +2566,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/MainLevel.unity
   - Assets/MainMenu.unity
-  playerPath: C:/Users/Quan/Desktop/Stuff/ExecutionFile/Mini Project 2D.exe
+  playerPath: E:/4thYear/CS427 - 3D Visualization and Game Development/1551027_MiniProj2D_MidTerm/Build/ExecutionFile/Mini
+    Project 2D.exe
