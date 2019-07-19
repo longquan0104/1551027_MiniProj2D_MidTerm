@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public static Weapon instance;
+
     public float fireRate = 0;
     public float damage = 10;
     public LayerMask whatTohit;
+
+    public Sprite machineGun;
 
     public Transform BulletTrailPrefab;
     public Transform MuzzleFlashPrefab;
@@ -27,7 +31,15 @@ public class Weapon : MonoBehaviour
 
     void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
         firePoint = transform.Find("FirePoint");
+        if (this.fireRate > 10)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = machineGun;
+        }
         if (firePoint == null)
         {
             Debug.LogError("no firepoint. Wot the fuck");
@@ -50,6 +62,10 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (this.fireRate > 10)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = machineGun;
+        }
         if (fireRate == 0)
         {
             if (Input.GetButtonDown("Fire1"))
