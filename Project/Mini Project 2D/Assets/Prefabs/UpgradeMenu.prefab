@@ -821,6 +821,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2621884458880962473}
     m_Modifications:
+    - target: {fileID: 598916677389740562, guid: 3ac92ecac30993d46a8ba653af7c4d19,
+        type: 3}
+      propertyPath: m_Name
+      value: UpgadeButton
+      objectReference: {fileID: 0}
     - target: {fileID: 598916677389740563, guid: 3ac92ecac30993d46a8ba653af7c4d19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -925,11 +930,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 598916677389740562, guid: 3ac92ecac30993d46a8ba653af7c4d19,
-        type: 3}
-      propertyPath: m_Name
-      value: UpgadeButton
       objectReference: {fileID: 0}
     - target: {fileID: 598916677389740572, guid: 3ac92ecac30993d46a8ba653af7c4d19,
         type: 3}
@@ -976,6 +976,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2621884459234763890}
     m_Modifications:
+    - target: {fileID: 598916677389740562, guid: 3ac92ecac30993d46a8ba653af7c4d19,
+        type: 3}
+      propertyPath: m_Name
+      value: UpgadeButton
+      objectReference: {fileID: 0}
     - target: {fileID: 598916677389740563, guid: 3ac92ecac30993d46a8ba653af7c4d19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1080,11 +1085,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 598916677389740562, guid: 3ac92ecac30993d46a8ba653af7c4d19,
-        type: 3}
-      propertyPath: m_Name
-      value: UpgadeButton
       objectReference: {fileID: 0}
     - target: {fileID: 598916677389740560, guid: 3ac92ecac30993d46a8ba653af7c4d19,
         type: 3}

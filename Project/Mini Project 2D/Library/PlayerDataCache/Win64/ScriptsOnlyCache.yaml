@@ -30,8 +30,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -2564,7 +2566,7 @@ ScriptsOnlyBuild:
     className: AutoMobileShaderSwitch
   platform: 19
   scenePathNames:
-  - Assets/MainLevel.unity
   - Assets/MainMenu.unity
+  - Assets/MainLevel.unity
   playerPath: E:/4thYear/CS427 - 3D Visualization and Game Development/1551027_MiniProj2D_MidTerm/Build/ExecutionFile/Mini
     Project 2D.exe

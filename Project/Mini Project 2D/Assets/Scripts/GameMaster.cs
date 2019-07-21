@@ -79,6 +79,15 @@ public class GameMaster : MonoBehaviour
         {
             ToggleUpgradeMenu();
         }
+        if (upgradeMenu == null)
+        {
+            upgradeMenu = GameObject.FindWithTag("UpgradeMenu");
+
+        }
+        if (gameOverUI == null)
+        {
+            gameOverUI = GameObject.FindWithTag("GameOver");
+        }
     }
 
     private void ToggleUpgradeMenu()
