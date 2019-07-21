@@ -23,6 +23,13 @@ public class CameraShake : MonoBehaviour
         Invoke("StopShake", length);
     }
 
+    private void Update()
+    {
+        if (mainCam == null)
+        {
+            mainCam = Camera.main;
+        }
+    }
     void DoShake()
     {
         if (shakeAmount > 0)
